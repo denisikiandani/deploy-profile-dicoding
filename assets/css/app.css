@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+/* palet 
+#338cf2 */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 3%;
+    opacity: 95%;
+}
+
+header.navbar-container .judul-kiri-atas a{
+    text-decoration: none;
+}
+
+header.navbar-container .judul-kiri-atas h1{
+    color: #b39536;
+    font-weight: bold;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #b39536;
+    color: white;   
+}
+
+main {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    padding: 4rem 4rem;
+    flex: 1;
+   
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+main .content {
+    max-width: 60%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10em;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main .content p, h2, img{
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+main .landing-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 12%;
+    clear: both;
+    width: 100%;
+}
+   
+main .landing-page .content-description {
+    flex: 1 1;
+    width: 100%;
+}
+   
+main .landing-page .content-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .landing-page .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .landing-page .content-description button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #b39536;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .landing-page .content-description button:hover {
+    border: 3px solid #b39536;
+    color: #b39536;
+    background-color: transparent;
+}
+
+main .landing-page .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 100%;
+    padding-left: 15%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main .content #about-me img{
+    margin: auto;
+    min-width: 250px;
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .content #Hobby img{
+    margin: auto;
+    min-width: 250px;
+    width: 100%;
+}
+
+main .content #Hobby .pantai img{
+    margin: auto;
+    min-width: 250px;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+main .content #food img{
+    margin: auto;
+    min-width: 250px;
+    width: 70%;
+}
+
+main .content #contact img{
+    margin: auto;
+    min-width: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+main .profile-card {
+    margin: 0 20%;
+    display: flex;
+}
+
+main .profile-card img{
+    margin: auto;
+    min-width: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+   
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: white;
+    /* background-color: #207be2; */
+   
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-style: solid;
+    border-color: #b39536;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #b39536;
+    /* color: white; */
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    /* color: black; */
+    opacity: 30%;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #b39536;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.profile-card section {
+    padding: 9%;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-card header {
+    text-align: center;
+}
+
+main .content #contact {
+    text-align: center;
+}
+
+main .content #contact table {
+    padding: 15%;;
+}
+
+main .content #about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .content #about-me p {
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+main .content #about-me .about-me-2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main .content #about-me .about-me-2 {
+    margin-top: 6%;
+}
+
+main .content #Hobby {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+main .content #Hobby .pantai {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .content #Hobby .pantai .isi-pantai {
+    display: flex;
+    flex-direction: row;
+}
+
+main .content #Hobby .pantai .isi-pantai p {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+main .content #Hobby .beatbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .content #Hobby .beatbox .isi-beatbox {
+    display: flex;
+    width: 100%;
+}
+
+main .content #Hobby .beatbox .isi-beatbox p {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin-left: auto;
+    order: 2;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+main .content #food {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main ,.landing-page {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .landing-page .content-description {
+        flex-direction: column;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 10%;
+        margin-top: 30%;
+    }
+
+    main .landing-page .content-description .title {
+        font-size: 3rem;
+    }
+     
+    main .landing-page .content-description p {
+        font-size: 1rem;
+    }
+     
+    main .content .content-image {
+        order: -1;
+    }
+
+    main .content #Hobby .pantai .isi-pantai, .isi-beatbox {
+        flex-direction: column;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    main .profile-card {
+        flex-direction: column;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
